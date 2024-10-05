@@ -15,7 +15,7 @@ interface Flight {
 const ResultsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedFlight, setSelectedFlight] = useState<Flight | null>(null); // Allow null
-  const [flights, setFlights] = useState<Flight[]>([
+  const [flights] = useState<Flight[]>([
     { airline: 'Air India', duration: '15h', price: 500 },
     { airline: 'Emirates', duration: '14h 30m', price: 600 },
     { airline: 'Qatar Airways', duration: '14h', price: 700 },
